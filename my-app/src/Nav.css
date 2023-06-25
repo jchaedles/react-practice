@@ -9,6 +9,9 @@ nav ul {
     display: flex;
     justify-content: flex-end;
 }
+nav ul input {
+    
+}
 
 nav li {
     margin-right: 1.5em;
