@@ -1,0 +1,8 @@
+type Query {
+    inputByQuery(query: String): SearchInputRecord
+}
+
+type SearchInputRecord {
+  id: ID
+  inputQuery: String
+}
