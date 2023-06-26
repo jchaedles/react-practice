@@ -1,8 +1,0 @@
-type Query {
-    getAllSearchInputs(): [SearchInput!]
-}
-
-type SearchInput {
-  id: ID
-  inputQuery: String
-}
