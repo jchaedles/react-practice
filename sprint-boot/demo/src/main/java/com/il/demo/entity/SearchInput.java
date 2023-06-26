@@ -26,5 +26,4 @@ public class SearchInput {
     public void setQuery(String query) {
         this.query = query;
     }
-    // Getters and Setters
 }
