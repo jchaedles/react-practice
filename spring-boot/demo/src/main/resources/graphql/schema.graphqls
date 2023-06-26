@@ -1,8 +1,9 @@
 type Query {
     inputByQuery(query: String): SearchInputRecord
+    inputById(id: ID): SearchInputRecord
 }
 
 type SearchInputRecord {
   id: ID
-  inputQuery: String
+  query: String
 }
