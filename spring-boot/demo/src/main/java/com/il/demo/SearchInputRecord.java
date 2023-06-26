@@ -16,14 +16,15 @@ public class SearchInputRecord {
     private String query;
     @Id
     private String id;
+    private String userId;
     public SearchInputRecord(){
         // empty for spring
     }
 
     private static List<SearchInputRecord> inputs = Arrays.asList(
-            new SearchInputRecord("q-1", "1"),
-            new SearchInputRecord("q-2", "2"),
-            new SearchInputRecord("q-3", "3")
+            new SearchInputRecord("q-1", "1", "u1"),
+            new SearchInputRecord("q-2", "2", "u2"),
+            new SearchInputRecord("q-3", "3", "u3")
     );
 
     public static SearchInputRecord getByQuery(String inputQuery) {
@@ -38,5 +39,8 @@ public class SearchInputRecord {
                 .filter(input-> input.getId().equals(id))
                 .findFirst()
                 .orElse(null);
+    }
+    public static List<SearchInputRecord> getAllRecords(){
+        return inputs;
     }
 }
